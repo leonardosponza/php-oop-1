@@ -1,5 +1,32 @@
 <?php
 
+class Movie {
+
+    public $title;
+    public $genre;
+    public $durata = 0;
+    public $costo;
+
+    function __construct($_name,){
+        $this->name = $_name;
+
+    }
+
+    public function setDurata($_durata){
+        $this->durata=$_durata;
+    }
+
+    public function getDurata(){
+        return $this->durata;
+    }
+
+    public function setCosto($_costo){
+        $this->costo=$_costo;
+    }
+
+    public function getCosto(){
+        return $this->costo;
+    }
 
 ?>
 
