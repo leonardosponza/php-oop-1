@@ -7,8 +7,8 @@ class Movie {
     public $durata = 0;
     public $costo;
 
-    function __construct($_name,){
-        $this->name = $_name;
+    function __construct($_title,){
+        $this->title = $_title;
 
     }
 
@@ -27,6 +27,13 @@ class Movie {
     public function getCosto(){
         return $this->costo;
     }
+}
+
+$LOTR = new Movie('lord of the rings',2002); 
+$LOTR->genre = "fantasy";
+$LOTR->durata = 180;
+$filmA->setCosto(9€);
+var_dump($LOTR);
 
 ?>
 
