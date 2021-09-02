@@ -6,7 +6,7 @@ class Movie {
     public $genre;
     public $durata = 0;
     public $costo;
-    public $director
+    public $director;
 
     function __construct($_title,$_director){
         $this->title = $_title;
